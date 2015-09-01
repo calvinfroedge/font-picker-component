@@ -58,7 +58,7 @@
               "itemSelected": function(li, choice, chooser){
                 chooser.css('font-family', choice);
                 font.family = choice;
-                if(opts.events.onChange) els.container.trigger('font:change', font);
+                els.container.trigger('font:change', font);
               }
             }, (opts.events.fontList || {})),
             transforms: $.extend({
@@ -98,7 +98,7 @@
               "itemSelected": function(li, choice, chooser){
                 chooser.css('font-size', choice);
                 font.size = choice;
-                if(opts.events.onChange) els.container.trigger('font:change', font);
+                els.container.trigger('font:change', font);
               }
             }, (opts.events.fontSize || {})),
             transforms: $.extend({
